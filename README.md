@@ -1,54 +1,75 @@
-# React + TypeScript + Vite
+# 🧙‍♀️ Estate Planner Wizard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive multi-step estate planning form built with **React + Vite + TypeScript** — complete with transitions, dynamic review, and a live Netlify deployment.
 
-Currently, two official plugins are available:
+![screenshot](https://user-images.githubusercontent.com/YOUR_ID/estate-planner-preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+##  Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ [View Deployed App](https://https://baharisa-estate-management.netlify.app)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+ Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+ Name input with live context storage
+ Dynamic asset list builder
+ Add multiple beneficiaries (name + relationship)
+ Review screen with live summary
+ Submit button with confirmation
+ Step-by-step navigation with Framer Motion animations
+ React Context API for global state
+ Custom styling with emojis and clean layout
+ Netlify-ready `_redirects` for SPA routing
+
+
+
+ Tech Stack
+
+- **React 18** (modern functional components)
+- **TypeScript** for static typing
+- **Framer Motion** for smooth animations
+- **Vite** for fast dev and builds
+- **Netlify** for hosting
+
+
+ Folder Structure
+
+estate-planner/
+├── public/
+│ └── _redirects
+├── src/
+│ ├── App.tsx
+│ ├── NameForm.tsx
+│ ├── AssetForm.tsx
+│ ├── BeneficiaryForm.tsx
+│ ├── ReviewStep.tsx
+│ └── FormContext.tsx
+└── dist/
+
+
+ Screenshots
+
+| Step 1: Name         | Step 2: Assets         |
+|----------------------|------------------------|
+| ![name](https://via.placeholder.com/300x180) | ![assets](https://via.placeholder.com/300x180) |
+
+| Step 3: Beneficiaries | Step 4: Review + Submit |
+|------------------------|--------------------------|
+| ![bene](https://via.placeholder.com/300x180) | ![review](https://via.placeholder.com/300x180) |
+
+---
+
+Contributing
+
+Pull requests and stars welcome! 
+
+ 
+Author
+
+Made with love by **Mahani Bahari**  
+
+
+
